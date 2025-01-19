@@ -20,6 +20,17 @@ fn main() {
         }
         
         acc += if is_odd(n_squared) { n_squared } else { 0 }
+        /*
+            OR
+            if n_squared >= upper {
+                // Break loop if exceeded the upper limit
+                break;
+            }
+            else if is_odd(n_squared) {
+                // Accumulate value, if it's odd
+                acc += n_squared;
+            }
+        */
     }
     println!("imperative style: {}", acc);
 
